@@ -1,0 +1,99 @@
+{
+    "common": {
+        "page": {
+            "index": "HOME",
+            "identity-app": "IDENTITY APPLICATION",
+            "account-opening": "ACCOUNT OPENING",
+            "check-registration": "CHECK REGISTRATION"
+        },
+        "content": {
+            "select": "Select..",
+            "demo-explain": "This is a KYC (Know Your Customer) demo application.\n\nYou can interact with this application to\n· Use the Certification Body application (demo) to authenticate identity\n· Send authentication data when opening a bank account\n· Flow continues until\n identity verification on the bank side."
+        },
+        "caption": {
+            "identity-app": {
+                "name": "Name",
+                "address": "Address",
+                "gender": "Gender",
+                "birthday": "Birth"
+            },
+            "check-registration": {
+                "register-id": "RegisterID",
+                "session-key": "SessionKEY",
+                "registered-time": "Registered",
+                "confirmed-time": "Identified",
+                "expires-time": "Expires"
+            },
+            "qr-content": "QR Content"
+        },
+        "dialog": {
+            "err-no-certification-authority": {
+                "title": "Certification body account not registered",
+                "msg": "An account for demonstration has not been registered.\nCreate an authentication company account for demonstration and record it on the block chain and local storage.\n\nAlso create a demo user and save it to local storage.\n\nThis process takes a few seconds."
+            },
+            "err-required": {
+                "title": "Input error",
+                "msg": "There are missing items."
+            }
+        }
+    },
+    "index": {
+        "title": "MENU"
+    },
+    "identity-app": {
+        "content": {
+            "demo-explain": "This demonstrates authentication using the certification body's application.\n\nIn this demo, the personal information entered directly in the form below is assumed correct and it's hash is registered by the certification body on the block chain.\n\nIn actual service, it is necessary to first confirm that the personal information is correct in some way (confirmation of the principal receipt by mailing etc.).\n\nAlso, in this demonstration, the expiration date of the authentication data is set to 15 minutes in order to make it easier to check expiration."
+        },
+        "form": {
+            "certification": {
+                "title": "Personal information authentication",
+                "submit": "Authenticate"
+            }
+        },
+        "dialog": {
+            "complete": {
+                "title": "Personal information authentication completed",
+                "msg": "We authenticated the personal information and registered the hash value on the block chain."
+            }
+        }
+    },
+    "account-opening": {
+        "content": {
+            "demo-explain": "On this demonstration you can check opening an account in the demo bank and can check sending your the certified personal information to the bank.\n\nAccount information will be recorded only in the local storage of the browser.\n\nBy pressing the 'Account Opening Application Execution' button, you can check the flow from the state where the general account opening application is completed to personal authentication."
+        },
+        "form": {
+            "account-opening": {
+                "submit": "Account Opening Application Execution\n(for demonstration)"
+            },
+            "certification": {
+                "title": "Sending authenticated personal information",
+                "submit": "Send personal information\n(for reading by the certification body identity application)"
+            }
+        },
+        "dialog": {
+            "err-not-certificated": {
+                "title": "No authentication data",
+                "msg": "Personal information has not been authenticated yet.\n\nPlease try again after completing individual authentication with the certification body identity application."
+            },
+            "err-expired": {
+                "title": "Authentication data expired",
+                "msg": "The validity period of the authentication data has expired.\n\nPlease perform personal authentication again with the certification body identity application."
+            },
+            "complete": {
+                "title": "Identification procedure completed",
+                "msg": "The identity verification procedure on the bank side has been completed."
+            }
+        }
+    },
+    "check-registration": {
+        "content": {
+        },
+        "form": {
+            "reset": {
+                "submit": "Reset registered information.\n(for demonstration only)"
+            }
+        },
+        "dialog": {
+        }
+    }
+}

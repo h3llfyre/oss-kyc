@@ -1,0 +1,9 @@
+Thumbs.db
+*.bak
+*.skrold
+gmo/*
+*/node_modules/*
+*/build/*
+provider/config.json
+server/config.json
+server/public/js/config.js
