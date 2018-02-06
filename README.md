@@ -31,38 +31,38 @@ see [Setup Development Environment](https://guide.blockchain.z.com/docs/init/set
 
 ### Install application
 ```bash
-git clone --recursive https://github.com/zcom-cloud-blockchain/oss-kyc.git
-cd oss-kyc/server
+git clone https://github.com/zcom-cloud-blockchain/oss-kyc.git
+cd oss-kyc
 npm install
 ```
 
 ### Deploy contracts
 ```bash
-cd oss-kyc/provider
-truffle migrate
+cd oss-kyc
+truffle migrate --network production
 ```
 
 ### Set up for Z.com Cloud Blockchain
 See [Basic Configuration](https://guide.blockchain.z.com/docs/dapp/setup/)
 
 - ##### Set CNS address on admin console
-  1. Open a file 'provider/build/contracts/ContractNameService.json'
+  1. Open a file 'build/contracts/ContractNameService.json'
 
-  2. Use 'networks.(network-id).address' to register as CNS address on admin console
+  2. Use 'networks.(network-id).address' as CNS address to register as ABI address on admin console
 
 See [Contract Creation Process](https://guide.blockchain.z.com/docs/dapp/contract/)
 - ##### Set Contract ABIs on admin console
   1. Open following files
     ```bash
-    'provider/build/contracts/ProxyController_v1.json'
+    'build/contracts/ProxyController_v1.json'
     ```
   2. Use 'networks.(network-id).address' and 'abi' values to register as Contract ABIs on admin console
 
 ### Configure for client
-Create server/public/js/config.js based on server/public/js/config_template.js. Edit "CNS" which you deployed.
+Create public/js/config.js based on public/js/config_template.js. Edit "CNS" which you deployed.
 
 ### Start application
 ```bash
 cd oss-kyc
-node server/app.js
+node app.js
 ```

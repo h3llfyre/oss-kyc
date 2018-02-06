@@ -1,0 +1,17 @@
+{
+  "name": "kyc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.18.2",
+    "debug": "^2.6.8",
+    "eth-client": "^0.2.1",
+    "express": "^4.15.3",
+    "mime": "^2.2.0",
+    "zcom-contracts": "git+https://github.com/zcom-cloud-blockchain/solidity.git"
+  }
+}

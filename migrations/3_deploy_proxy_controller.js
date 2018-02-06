@@ -1,4 +1,4 @@
-const ContractNameService = artifacts.require('./ContractNameService.sol'),
+const ContractNameService = artifacts.require('zcom-contracts/contracts/ContractNameService.sol'),
     ProxyController_v1 = artifacts.require('./ProxyController_v1.sol'),
     ProxyControllerLogic_v1 = artifacts.require('./ProxyControllerLogic_v1.sol');
 

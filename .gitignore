@@ -1,9 +1,4 @@
-Thumbs.db
-*.bak
-*.skrold
-gmo/*
-*/node_modules/*
-*/build/*
-provider/config.json
-server/config.json
-server/public/js/config.js
+zcom-contracts/*
+node_modules/*
+build/*
+public/js/config.js
